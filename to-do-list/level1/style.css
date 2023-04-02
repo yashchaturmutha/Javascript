@@ -1,0 +1,35 @@
+html{
+    border: 2px rebeccapurple solid;
+    /* height: 100vh; */
+}
+
+body{
+    width: 25%;
+    /* height: 30vh; */
+    margin: auto;/* left and right equal space */
+    /* margin: 35vh [(100vh-(30vh))/2] auto;   top bottom left right equal space*/
+    border: 2px rebeccapurple solid;
+
+}
+input{
+    height: 2rem;
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+button{
+    height: 2.5rem;
+    font-size: 1.5rem;
+    width: 2.5rem;
+}
+
+
+.paragraph-styling {
+    /* margin: 25%; */
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#todocontainer {
+    margin-top: 1rem;
+}
