@@ -1,0 +1,49 @@
+// #navbarblock
+// {
+//     position: fixed;
+//     width: 100%;
+//     opacity: 1;
+// }
+
+
+.active {
+    color: white;
+}
+
+.secondbox {
+    margin-top: 1.5rem;
+}
+
+#card1 {
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+@mixin footer {
+    text-align: center;
+    color: #999;
+    background-color: #e7e0e0;
+    padding: 2rem 0 0.5rem;
+    font-size: 1.3rem;
+}
+
+#footercontainer {
+    @include footer();
+}
+
+#rowcontainer {
+    width: 85%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 auto;  /*grow vertically*/
+
+    img {
+        border-radius: 1rem;
+    }
+}

@@ -1,0 +1,140 @@
+body {
+    /* background: url('https://images.unsplash.com/photo-1580086319619-3ed498161c77?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'); */
+    /* background: url('https://preview.colorlib.com/theme/fitfloss/img/banner_bg.png'); */
+    /* background: url('https://images.pexels.com/photos/2729899/pexels-photo-2729899.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'); */
+    /* background-size:contain;
+    background-repeat: no-repeat;
+    background-size: 100% 950px;
+     */
+    /* width: 100%;
+    height: 100%; */
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+body>img {
+    /* filter: grayscale(25%); */
+    filter: contrast(50%);
+    /* opacity: 90%; */
+    width: 100%;
+    /* height: 100%; */
+}
+
+header {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 180px;
+    width: 100%;
+}
+
+.navbar {
+    list-style: none;
+    margin: 25px;
+    /* text-align: left; */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition-duration: 0.3s;
+    /* filter: brightness(50%); */
+}
+
+li {
+    display: inline;
+    background-color: rgb(155, 84, 84);
+    margin: 25px;
+    padding: 10px;
+    border: 2px solid rgb(155, 84, 84);
+    border-radius: 20px;
+}
+
+.search:hover,a:hover {
+    color: rgb(31, 28, 27);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.navbar li a.active:hover {
+    color: wheat;
+    text-decoration: underline;
+}
+
+nav,
+div {
+    display: inline-block;
+}
+
+.logo {
+    color: black;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    line-height: 40px;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+.search {
+    color: white;
+    background-color:rgb(155, 84, 84);
+    font-size: 20px;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid rgb(155, 84, 84);
+    border-radius: 20px;
+    transition-duration: 0.3s;
+}
+
+.container {
+    position: absolute;
+    /* display: block; */
+    left: 0px;
+    right: 0;
+    top: 250px;
+    width: 50%;
+    /* text-align: center; */
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 40%;
+    height: 25px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.submit {
+    display: block;
+    color: rgb(29, 27, 27);
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px auto;
+    width: 15%;
+    padding: 10px;
+    border: 2px solid rgb(155, 84, 84);
+    border-radius: 20px;
+    transition-duration: 0.5s;
+
+}
+
+.submit:hover {
+    background-color: rgb(155, 84, 84);
+}

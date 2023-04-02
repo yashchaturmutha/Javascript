@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation</title>
+    <style>
+        .navbar {
+            background-color: rgb(189, 22, 58);
+            border-radius: 20px;
+            overflow: auto;
+        /* visible - Default. The overflow is not clipped. The content renders outside the element's box
+        hidden - The overflow is clipped, and the rest of the content will be invisible
+        scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content
+        auto - Similar to scroll, but it adds scrollbars only when necessary */
+
+        /* https://www.w3schools.com/css/css_overflow.asp */
+
+            height: 100px;;
+        }
+
+        p{
+            margin: 10px 10px;
+        }
+        ul {
+            overflow: auto;
+
+        }
+
+        li {
+            float: left;
+            list-style: none;
+            /* The list-style property is used to remove all the bulleted points in the navigation items. */
+            margin: 13px 20px;
+        }
+
+        a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            color: red
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            </ul>
+            <p> CSS Tutorial: Creating a Navigation Menu | Web Development Tutorials #23
+                We have discussed various things till now in the CSS from adjusting the borders to styling the links.
+                Here, we are going to see what are Navigation Bars in a website and how to apply them.
+                We will start by making a new file called tut23.html and add the boilerplate to obtain the basic HTML
+                code. Give the title as Navigation in the tag under the head section.
+                A navigation bar is usually a list of links, so using the and elements can help in obtaining it. The
+                code for the following will be as follows
+            </p>
+        </nav>
+    </header>
+</body>
+
+</html>

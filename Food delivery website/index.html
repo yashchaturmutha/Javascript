@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <img class="logo" src="https://cdn.skillenza.com/files/2646a504-32d9-44bd-965d-9228f8e5b17f/dunzo_logo.png"
+            alt="">
+
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <ul class="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+
+        </ul>
+    </div>
+
+    <div class="bgrnd">
+        <h1 class="primary">ORDER FOOD DELIVERY</h1>
+        <p>From your Favourite Restaurants !!</p>
+
+    </div>
+
+    <!-- <img class="bgrndimg" src="https://static.wixstatic.com/media/ea71bb_73e8260cc2ab466db7bae785fd4d5f3d.jpg/v1/fill/w_1838,h_842,al_c,q_85,usm_0.66_1.00_0.01/ea71bb_73e8260cc2ab466db7bae785fd4d5f3d.webp" 
+        alt="" srcset=""> -->
+
+    <section id="services">
+
+        <h1>OUR SERVICES </h1>
+
+        <div class="container">
+
+            <div class="box" id="box-1">
+                <img src="data:image/png;base64,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"
+                    alt="" srcset="">
+                <div class="subbox">
+                    <h3 class="center">Restaurant</h3>
+                    <p>Find deals, free delivery, and more from our restaurant partners.</p>
+                </div>
+            </div>
+
+            <div class="box" id="box-2">
+                <img src="https://images.pexels.com/photos/6270/woman-flowers-holidays-girl-6270.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="" srcset="">
+                <div class="subbox">
+                    <h3 class="center">Food Catering</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sint explicabo minima
+                        excepturi
+                        eaque animi natus sapiente nulla atque nobis.</p>
+                </div>
+            </div>
+
+            <div class="box" id="box-3">
+                <img src="https://images.pexels.com/photos/1992912/pexels-photo-1992912.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="" srcset="">
+                <div class="subbox">
+                    <h3 class="center">Grocery</h3>
+                    <p>Don’t stand in line - order online! Choose from top stores delivering groceries to you.</p>
+
+                </div>
+            </div>
+
+            <div class="box" id="box-4">
+                <img src="https://images.pexels.com/photos/5699515/pexels-photo-5699515.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="" srcset="">
+                <div class="subbox">
+                    <h3 class="center">Pharmacy</h3>
+                    <p>Got the sniffles? We’ve got you. Get medicine delivered to you quickly and easily.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+
+        <h1 class="contact-heading">Contact Us</h1>
+
+        <div id="contact-box">
+
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
